@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Liu - Assignment 6</title>
+    <link rel="stylesheet" href="normalize.css" type="text/css" />
+    <script src="info.js"></script>
+ <!---->
+</head>
+<body>
+    <div class="container">
+    <header>
+            <img src="logo/logo.png" alt="logo" height="150" width="150">
+        Web222 Assignment 6 - Hsueh Chih Liu</header>
+    <nav>
+        <ul>
+            <li><a href="honesty.html">Welcome page</a></li>
+            <li><a href="info.html">User info page</a></li>
+        </ul>
+    </nav>
+   
+    <main class="main"> 
+        
+                <h2>User info page:</h2>
+                <form id="form" method ="post" action="https://httpbin.org/post" onsubmit='return formValidation(this);'>
+                    First Name: <br>
+                    <input type="text" id="Fname" name="Fname" required /><br>
+                    Last Name:<br>
+                    <input type="text" id="Lname" name="Lname" required /><br>
+                    Username: <br>
+                    <input  type="text" id="username" name="username" required/><br>
+                    Password:<br>
+                    <input  type="password" name="password" id="password" required  /><br>
+                    Re-Enter Password:<br>
+                    <input  type="password" name="password2" id="password2" required  /><br>
+                    Email:<br>
+                    <input  type="email" name="email" required="required"  /><br>
+                     Age:<br>
+                     <input  type="number" name="age" min="18" max="60" required /><br>
+                     Education Level: <br>
+                    <select name="Education-Level-list" id="select" >
+                        <option value = "0">select </option>
+                        <option value="1">Technical Diploma</option>
+                        <option value="2" >College Diploma</option>
+                        <option value="3">Bachelor's Degree</option>
+                        <option value="4">Master's Degree</option>
+                        <option value="5">Others</option>
+
+                    </select><br>
+
+                    Education Status:
+                    <ul>
+                        <li><input type="radio" name="educationStatus" value="Graduated" required>Graduated</li>
+                        <li><input type="radio" name="educationStatus" value="Currentenrolled">Current enrolled</li>
+                        <li><input type="radio" name="educationStatus" value="Didnotgraduate">Did not graduate</li>
+                    </ul>
+
+                    <input type="hidden" name="lastName" id="lastName" value="Liu" />
+                    <input type="hidden" name="studentId" id="studentId" value="116131186" />
+
+
+                    <br><br><br>
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Clear">
+                    
+                </form>
+  
+
+
+    </main>
+    <section class="raside">
+
+      <h2 >Error Message</h2><br>
+        <h4 id="displayerror"></h4>
+
+
+
+    </section>
+    <footer>©2019 - &lt;Hsueh Chih Liu&gt;</footer>
+    </div>
+</body>
+</html>
